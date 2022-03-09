@@ -8,6 +8,49 @@ html{
     font-size: 62.5%;
 }
 
+:root{
+    --primarycolor: #FA4F4F;
+}
+
+.cabecera{
+    width: 100%;
+    height: 35rem;
+}
+
 #navprincipal{
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+#phome{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)), url(Resource/wallhome.jpg);
+    background-position: 60%;
+    object-fit: cover;
+}
+
+.logo{
+    width: 10rem;
+    height: 4.2rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.listaiconos{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+i{
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: white;
+    
 }
