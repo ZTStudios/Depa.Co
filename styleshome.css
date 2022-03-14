@@ -124,8 +124,6 @@ input:focus{
 .deptcard{
     width: 400px;
     height: 250px;
-    border: black 2px solid;
-
 }
 
 .cardtitle{
@@ -150,4 +148,55 @@ input:focus{
 #cardlg{
     background-image: url(Resource/wall3.jpg);
     background-size: cover;
+}
+
+footer{
+    height: 170px;
+    margin-top: 70px;
+    background-color: var(--primarycolor);
+    display: flex;
+    
+}
+
+#ztlogo{
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#footerp{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    color: white;
+    font-size: var(--sm);
+}
+
+.ztinfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.ghinfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.ghinfo li{
+    padding: 3px;
+}
+
+#logogh{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.linkgithub{
+    color: white;
+    text-decoration: none;
 }
