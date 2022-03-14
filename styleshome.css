@@ -105,3 +105,49 @@ input:focus{
 #iconsearch{
     margin-left: 4rem;
 }
+
+.title{
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.containrecomendacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.deptcard{
+    width: 400px;
+    height: 250px;
+    border: black 2px solid;
+
+}
+
+.cardtitle{
+    height: 35px;
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#cardsm{
+    background: url(Resource/wall1.jpg);    
+    background-size: cover;
+}
+#cardmd{
+    background-image: url(Resource/wall2.jpg);
+    background-size: cover;
+}
+#cardlg{
+    background-image: url(Resource/wall3.jpg);
+    background-size: cover;
+}
