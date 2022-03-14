@@ -8,8 +8,16 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 :root{
     --primarycolor: #FA4F4F;
+    --inputcolor: #FC5656;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 14px;
 }
 
 .cabecera{
@@ -53,4 +61,47 @@ i{
     margin-right: 2rem;
     color: white;
     
+}
+
+.homepage #clasebusqueda{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+}
+
+form{
+    width: 700px;
+    height: 4rem;
+    display: flex;
+    background-color: var(--primarycolor);
+    border-radius: 3rem;
+    align-items: center;
+    color: white;
+}
+
+label{
+    font-size: var(--md);
+    margin-left: 3rem;
+}
+
+input{
+    background-color: var(--inputcolor);
+    padding: 6px;
+    border-radius: 8px;
+    width: 500px;
+    height: 3rem;
+    margin-left: 2rem;
+    border: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    opacity: 50%;
+}
+input:focus{
+    outline: none;
+}
+#iconsearch{
+    margin-left: 4rem;
 }

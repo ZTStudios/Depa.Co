@@ -7,10 +7,14 @@
     <title>Depa.Co</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styleshome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="cabecera">
-        <nav id="navprincipal">
+    <div class="homepage">
+        <header class="cabecera">
+            <nav id="navprincipal">
             <img class="logo" src="Resource/LOGOW.png" alt="LOGO DEP">
             <ul class="listaiconos">
                 <li>
@@ -23,10 +27,16 @@
                     <i class='bx bx-mail-send'></i> 
                 </li>
             </ul>
-        </nav>
-        <div id="phome"></div>
-    </header>
-
-    <img src="" alt="">
+            </nav>
+            <div id="phome"></div>
+        </header>
+        <div id="clasebusqueda">
+            <form action="/">
+                <label for="Busqueda">Departamento</label>
+                <input type="text" placeholder="Nuevo León, Mty">
+                <i class='bx bx-search' id="iconsearch"></i>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
