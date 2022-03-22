@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5;
+}
+
+header{
+    width: 100vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)),url(Resource/wall1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.header__nav{
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-logo{
+    width: 10vw;
+    height: 5vh;
+    background: url(Resource/LOGOW.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px 0px 0px 15px;
+}
+
+.header__nav-ul{
+    height: 5vh;
+    margin: 15px 15px 0px 0px;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 1.8rem;
+}
+
+.header__nav-ul-li a{
+    color: white;
+}
+
+.bxl-facebook-circle:hover{
+    color: #1877f2;
+}
+
+.bxl-twitter:hover{
+    color: rgb(29 155 240);
+}
+
+.bx-mail-send:hover{
+    color: rgb(255, 123, 0);
+}
