@@ -212,9 +212,17 @@ header{
     font-size: 2.3rem;
 }
 
-ul a {
+.linkgithub {
     color: white;
     text-decoration: none;
     font-size: var(--sm);
+}
+
+.header__nav-logo:hover {
+    cursor: pointer;
+}
+
+.main__info-button:hover {
+    cursor: pointer;
 }
 
