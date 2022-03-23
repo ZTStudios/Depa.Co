@@ -1,0 +1,228 @@
+:root {
+    --ButtonColorPrimary:#fd1111;
+    --primarycolor: #FA4F4F;
+    --inputcolor: #FC5656;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5;
+}
+body{
+    font-family: Roboto;
+}
+header{
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)),url(Resource/wall1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.header__nav{
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-logo{
+    width: 10vw;
+    height: 5vh;
+    background: url(Resource/LOGOW.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px 0px 0px 15px;
+}
+
+.header__nav-ul{
+    height: 5vh;
+    margin: 15px 15px 0px 0px;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 1.8rem;
+}
+
+.header__nav-ul-li a{
+    color: white;
+}
+
+.bxl-facebook-circle:hover{
+    color: #1877f2;
+}
+
+.bxl-twitter:hover{
+    color: rgb(29 155 240);
+}
+
+.bx-mail-send:hover{
+    color: rgb(255, 123, 0);
+}
+.main{
+    width: 100%;
+    height: 40vh;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.main__info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.main__info-departament{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1366px;
+}
+.main__info-department-title{
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.main__info-department-title span{
+    color: red;
+}
+.main__info-department-description{
+    max-width: 27ch;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.main__info-departament-icons{
+    font-size: 3rem;
+}
+.main__info-department-dimensions h3{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.main__info-department-dimensions p{
+    font-size: 1.4rem;
+}
+
+.main__info-profile {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main__info-tittle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.main__info-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--ButtonColorPrimary);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main__map{
+    max-width: 1366px;
+    width: 100%;
+    height: 500px;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main__map-map {
+    margin: 0 auto;
+    width: 95%;
+    height: 400px;
+    margin-top: 40px;
+}
+
+
+.footer__depa {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--primarycolor);
+    margin-top: 80px;
+}
+
+.footer__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.logoZT {
+    width: 75px;
+    height: 25px;
+    background: url("https://cdn.discordapp.com/attachments/657022177287340064/952797739706626098/ZT_Studios_White.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+}
+
+.ztlink {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    align-items: center;
+}
+
+.footer__list-github {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+#logogh {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.linkgithub {
+    color: white;
+    text-decoration: none;
+    font-size: var(--sm);
+}
+
+.header__nav-logo:hover {
+    cursor: pointer;
+}
+
+.main__info-button:hover {
+    cursor: pointer;
+}
+
