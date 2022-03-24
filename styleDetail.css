@@ -1,4 +1,6 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;900&display=swap');
+
+:root{
     --ButtonColorPrimary:#fd1111;
     --primarycolor: #FA4F4F;
     --inputcolor: #FC5656;
@@ -8,176 +10,229 @@
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
+    /* font-family: 'Prompt', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
 }
-body{
-    font-family: Roboto;
-}
+
 header{
     width: 100%;
     height: 60vh;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    background-image: url(Resource/wall1.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)),url(Resource/wall1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
 }
 
-.header__nav{
+.nav{
+    max-width: 1300px;
     width: 100%;
-    max-width: 1366px;
+    height: 10vh;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header__nav-logo{
-    width: 10vw;
-    height: 5vh;
-    background: url(Resource/LOGOW.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 15px 0px 0px 15px;
+.nav__logo{
+    width: 140px;
+    height: 140px;
+    background-image: url(Resource/LOGOW.png);
+    background-size:contain;
+    transition: 0.3s all;
+
 }
 
-.header__nav-ul{
-    height: 5vh;
-    margin: 15px 15px 0px 0px;
-    display: flex;
+.nav__logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+
+.nav__ul{
     list-style: none;
-    gap: 25px;
-    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
-.header__nav-ul-li a{
+.nav__ul-li a{
     color: white;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.nav__ul-li:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+
+}
+
+.bxl-facebook-circle{
+    transition: 0.3s all;
+}
+
+.bxl-twitter{
+    transition: 0.3s all;
+}
+
+.bxs-envelope{
+    
+    transition: 0.3s all;
 }
 
 .bxl-facebook-circle:hover{
     color: #1877f2;
+    transition: 0.3s all;
+    
 }
 
 .bxl-twitter:hover{
     color: rgb(29 155 240);
+    transition: 0.3s all;
 }
 
-.bx-mail-send:hover{
+.bxs-envelope:hover{
     color: rgb(255, 123, 0);
+    transition: 0.3s all;
 }
-.main{
+
+#Seccion1{
+    max-width: 1300px;
     width: 100%;
     height: 40vh;
-    max-width: 1366px;
     margin: 0 auto;
+    padding-top: 40px;
 }
-.main__info{
+
+.section__info{
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+    margin-bottom: 5%;
+
 }
-.main__info-departament{
+
+.info{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1366px;
+    gap: 17px;
 }
-.main__info-department-title{
+
+.info-icons img{
+    width: 30px;
+}
+
+.img2{
+    margin-left: 10px;
+}
+
+.info-h1{
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
 }
-.main__info-department-title span{
-    color: red;
-}
-.main__info-department-description{
+
+.info-p{
+    text-align: left;
     max-width: 27ch;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
-.main__info-departament-icons{
-    font-size: 3rem;
-}
-.main__info-department-dimensions h3{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-.main__info-department-dimensions p{
-    font-size: 1.4rem;
+
+span{
+    color: red;
 }
 
-.main__info-profile {
-    width: 25%;
+
+
+.info-dimensions-h1{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+.contact{
+    width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    justify-content: right;
 }
 
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-.main__info-tittle {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.main__info-button {
-    width: 150px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
-    background-color: var(--ButtonColorPrimary);
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.main__map{
-    max-width: 1366px;
-    width: 100%;
-    height: 500px;
-    max-width: 1366px;
+.contact-info{
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    width: 20%;
+    height: 80%;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
 }
 
-.main__map-map {
-    margin: 0 auto;
-    width: 95%;
-    height: 400px;
-    margin-top: 40px;
+.contact-info img{
+    display: flex;
+    
+    width: 130px;
+    border-radius: 50%;   
 }
 
+.contact-info-h2 h2{
+    display: flex;
+    justify-content: end;
+}
+
+.contact-info-btn{
+    background-color: var(--ButtonColorPrimary);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.contact-info-btn:hover{
+    background-color: var(--inputcolor);
+    transition: 0.3s all;
+    padding: 5px 25px;
+    cursor: pointer;
+
+}
+
+.section__map{
+    margin-top: 2%;
+    width: 100%;
+    height: 60vh;
+}
+
+.section__map-map{
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
 
 .footer__depa {
     width: 100%;
     height: 20vh;
     background-color: var(--primarycolor);
-    margin-top: 80px;
+    margin-top: 40%;
 }
 
 .footer__container {
     width: 100%;
     height: 100%;
     display: flex;
-    max-width: 1366px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -217,12 +272,3 @@ header{
     text-decoration: none;
     font-size: var(--sm);
 }
-
-.header__nav-logo:hover {
-    cursor: pointer;
-}
-
-.main__info-button:hover {
-    cursor: pointer;
-}
-
