@@ -7,6 +7,19 @@
 html{
     font-size: 62.5%;
 }
+
+body{
+    font-family: Roboto;
+}
+
+:root{
+    --ButtonColorPrimary:#fd1111;
+    --primarycolor: #FA4F4F;
+    --inputcolor: #FC5656;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 14px;
+}
 .header{
     width: 100%;
     height: 10vh;
@@ -27,7 +40,7 @@ html{
     width: 30%;
 }
 .header__nav-img img{
-    width: 200px;
+    width: 150px;
     transition: 0.7s;
 }
 
@@ -39,6 +52,7 @@ html{
 
 .header__nav-buttons{
     width: 20%;
+    display: flex;
 }
 .header__nav-buttons-btn{
     width: 100px;
@@ -69,12 +83,13 @@ html{
     gap: 20px;
 }
 .header__nav-ul-li{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .header__nav-ul-li a{
     text-decoration: none;
     color: black;
-    transition: ease-in ;
+    transition: ease-in;
+    
 }
 
 .header__nav-ul-li.facebook a:hover{
@@ -125,6 +140,7 @@ html{
     width: 40%;
     height: 100%;
     border-radius: 30px 0px 0px 30px;
+    object-fit: cover;
 }
 .search__card-cards-description{
     width: 60%;
@@ -155,3 +171,180 @@ html{
     border-radius: 30px;
 }
 
+.footerdepa {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--primarycolor);
+    margin-top: 10%;
+}
+
+.footercontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logoZT {
+    width: 75px;
+    height: 25px;
+    background: url("https://cdn.discordapp.com/attachments/657022177287340064/952797739706626098/ZT_Studios_White.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+}
+
+.ztlink {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    align-items: center;
+}
+
+.footer__list-github {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+#logogh {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.linkgithub {
+    color: white;
+    text-decoration: none;
+    font-size: var(--sm);
+}
+
+@media (max-width:1367px){
+
+    .header__nav{
+        max-width: 1000px;
+    }
+    .header__nav-img img{
+        width: 150px;
+        transition: 0.7s;
+    }
+    .search__container{
+        max-width: 1000px;
+    }
+    .footercontainer{
+        max-width: 1000px;
+    }
+}
+
+@media (max-width:1025px){
+
+    .header__nav{
+        max-width: 750px;
+    }
+    .header__nav-img img{
+        width: 120px;
+        transition: 0.7s;
+    }
+    .header__nav-buttons{
+        width: 300px;
+    }
+    .header__nav-ul{
+        width: 60%;
+    }
+    .search__container{
+        max-width: 750px;
+    }
+    .footercontainer{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:768px){
+
+    .header__nav{
+        max-width: 460px;
+        margin-bottom: 25px;
+    }
+    .header__nav-img img{
+        width: 120px;
+        transition: 0.7s;
+    }
+    .header__nav-buttons{
+        display: none;
+    }
+    .header__nav-ul{
+        width: 60%;
+    }
+    .search__container{
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footercontainer{
+        margin-top: 40%;
+        max-width: 460px;
+        display: flex;
+        justify-content: center;
+    }
+    .search__card{
+        width: 100%;
+        height: 100%;
+    }
+    .search__map{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 481px){
+
+    .header__nav{
+        max-width: 300px;
+        margin-bottom: 25px;
+    }
+    .header__nav-img img{
+        width: 120px;
+        transition: 0.7s;
+    }
+    .header__nav-buttons{
+        display: none;
+    }
+    .header__nav-ul{
+        width: 60%;
+    }
+    .search__card-cards-description{
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .cards-description-title{
+        font-size: 1.5rem;
+    }
+    .cards-description-paragraph{
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .search__container{
+        max-width: 300px;
+    }
+    .footercontainer{
+        margin-top: 60%;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .search__card{
+        width: 100%;
+        height: 100%;
+    }
+    .search__map{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
