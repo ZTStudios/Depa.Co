@@ -1,184 +1,147 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;900&display=swap');
+
+:root{
     --ButtonColorPrimary:#fd1111;
     --primarycolor: #FA4F4F;
     --inputcolor: #FC5656;
-    --lg: 20px;
-    --md: 16px;
-    --sm: 14px;
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
 }
+
 body{
-    font-family: Roboto;
+    min-width: 240px;
 }
+
 header{
     width: 100%;
     height: 60vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)),url(Resource/wall1.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
     background-position-y: center;
 }
 
-.header__nav{
+.nav{
     width: 100%;
-    max-width: 1366px;
-    display: flex;
-    justify-content: space-between;
+    height: 20vh;
+    padding: 0 10% 0 8%;
 }
 
-.header__nav-logo{
-    width: 10vw;
-    height: 5vh;
-    background: url(Resource/LOGOW.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 15px 0px 0px 15px;
+.nav__logo{
+    
+    width: 150px;
+    height: 50px;
+    background-image: url(Resource/LOGOW.png);
+    background-size: cover;
+    
 }
 
-.header__nav-ul{
-    height: 5vh;
-    margin: 15px 15px 0px 0px;
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    font-size: 1.8rem;
+.bxl-facebook-circle{
+    transition: 0.3s all;
+    
 }
 
-.header__nav-ul-li a{
-    color: white;
+.bxl-twitter{
+    transition: 0.3s all;
 }
 
-.bxl-facebook-circle:hover{
-    color: #1877f2;
+.bxs-envelope{
+    transition: 0.3s all;
 }
 
-.bxl-twitter:hover{
-    color: rgb(29 155 240);
+
+.section__info{
+    margin: 10% 10% 0 10%;
 }
 
-.bx-mail-send:hover{
-    color: rgb(255, 123, 0);
+
+.info-h1{
+    font-size: 2.6rem;
 }
-.main{
-    width: 100%;
-    height: 40vh;
-    max-width: 1366px;
-    margin: 0 auto;
-}
-.main__info{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-.main__info-departament{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1366px;
-}
-.main__info-department-title{
-    font-weight: bold;
-    font-size: 2.3rem;
-}
-.main__info-department-title span{
-    color: red;
-}
-.main__info-department-description{
+
+.info-p{
+    font-size: 2rem;
     max-width: 27ch;
-    font-size: 1.2rem;
-    font-weight: 600;
 }
-.main__info-departament-icons{
-    font-size: 3rem;
+
+.info-icons{
+    width: 30%;       
+    /* height: 30%; */
 }
-.main__info-department-dimensions h3{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+
+.info-icons img{
+    width: 10px;
+    height: 10px;
 }
-.main__info-department-dimensions p{
+
+.info-dimensions{
+    margin-top: 10%;
     font-size: 1.4rem;
 }
 
-.main__info-profile {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.contact{
+    margin: 10% 0 15%;
 }
 
-.profile-img {
-    width: 150px;
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info img{
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
-.main__info-tittle {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.main__info-button {
-    width: 150px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
+.contact-info-btn{
     background-color: var(--ButtonColorPrimary);
+    border: none;
+    padding: 5px 20px;
     color: white;
-    font-size: 1rem;
-    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
-.main__map{
-    max-width: 1366px;
+.section__map{
+    width: 80%;
+    height: 40vh;
+    margin: 0 10%;
+}
+
+.section__map-map{
     width: 100%;
-    height: 500px;
-    max-width: 1366px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    height: 100%;
+    border-radius: 20px;
 }
-
-.main__map-map {
-    margin: 0 auto;
-    width: 95%;
-    height: 400px;
-    margin-top: 40px;
-}
-
 
 .footer__depa {
     width: 100%;
     height: 20vh;
     background-color: var(--primarycolor);
-    margin-top: 80px;
+    margin-top: 20%;
 }
 
 .footer__container {
     width: 100%;
     height: 100%;
     display: flex;
-    max-width: 1366px;
-    margin: 0 auto;
+    /* max-width: 1300px;
+    margin: 0 auto; */
 }
 
 .logoZT {
@@ -218,11 +181,232 @@ header{
     font-size: var(--sm);
 }
 
-.header__nav-logo:hover {
-    cursor: pointer;
+@media (min-width:0px){
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    span{
+        color: red;
+    }
+    .info-h1{
+        font-size: 2.5rem;
+    }
+
+    .info-p{
+        font-size: 1.8rem;
+    }
+
+    .info-icons{
+        margin-top: 5%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .info-icons img{
+        
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-dimensions{
+        font-size: 2rem;
+    }
+
+    .nav__ul-li{
+        display: none;
+        transition: 0.3s;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+        height: 30%;
+        margin: 15% 0 ;
+    }
+
+    .contact-info{
+        min-width: 120px;
+        width: 20%;
+    }
+
+    .contact-info-h2{
+        font-size: 1.6rem;
+    }
+
+    .contact-info img{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+    
+
+
 }
 
-.main__info-button:hover {
-    cursor: pointer;
+@media (min-width:700px){
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* margin: 0 3%; */
+    }
+    
+    .nav__ul{
+        display: flex;
+        gap: 15px;
+        padding-top: 3%;
+    }
+
+    .nav__ul-li{
+        display: flex;
+        list-style: none;
+        font-size: 2.5rem;
+    }
+
+    .nav__ul-li a{
+        color: white;
+        gap: 15px;
+    }
+
+    .contact{
+        margin: 10% 0 ;
+    }
 }
 
+@media (min-width:1024px){
+    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* margin: 0 3%; */
+    }
+    
+    .nav__ul{
+        display: flex;
+        padding-top: 3%;
+        gap: 15px;
+    }
+
+    .nav__ul-li{
+        display: flex;
+        list-style: none;
+        font-size: 2.5rem;
+    }
+
+    .nav__ul-li a{
+        color: white;
+        gap: 15px;
+    }
+
+
+    .section__info{
+        display: flex;
+        margin: 5% 10% 0 10%;
+    }
+
+    .info{
+        width: 50%;
+    }
+
+    .info-h1{
+        font-size: 2rem;
+    }
+
+    .info-p{
+        font-size: 1.8rem;
+    }
+
+    .info-icons{
+        margin-top: 3%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .info-icons img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-dimensions{
+        font-size: 1.8rem;
+        margin-top: 5%;
+    }
+
+    .contact{
+        width: 50%;
+        margin: 0 0 15%;
+        display: flex;
+        justify-content: right;
+
+    }
+
+    .contact-info{
+        width: 45%;
+        display: flex;
+        /* padding-right: 5%; */
+    }
+
+    .contact-info img{
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .contact-info-h2{
+        font-size: 2.2rem;
+    }
+
+    .contact-info-btn{
+        font-size: 1.6rem;
+    }
+ 
+    .section__map{
+        height: 60vh;
+        
+    }
+}
+
+/* Hover */
+.contact-info-btn:hover{
+    background: linear-gradient(to right,#fb5283,#ff3527);
+    padding: 5px 25px;
+    transition: 0.3s ;
+}
+
+.nav__logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+.nav__ul-li:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+
+}
+
+.bxl-facebook-circle:hover{
+    color: #1877f2;
+    transition: 0.3s all;
+    
+}
+
+.bxl-twitter:hover{
+    color: rgb(29 155 240);
+    transition: 0.3s all;
+}
+
+.bxs-envelope:hover{
+    color: #db4a39;
+    transition: 0.3s all;
+}
