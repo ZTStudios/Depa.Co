@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primarycolor: #FA4F4F;
+    --inputcolor: #FC5656;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 14px;
+}
+
+.cabecera{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#navprincipal{
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    max-width: 1366px;
+}
+
+.twitter:hover {
+    color: var(--primarycolor) ;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    color: var(--primarycolor);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.mail:hover {
+    color: var(--primarycolor);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#phome{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0)), url(Resource/wallhome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    max-width: 1366px;
+}
+
+.logo{
+    width: 10rem;
+    height: 4.2rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.listaiconos{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+i{
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.homepage #clasebusqueda{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+}
+
+form{
+    width: 700px;
+    height: 4rem;
+    display: flex;
+    background-color: var(--primarycolor);
+    border-radius: 3rem;
+    align-items: center;
+    color: white;
+}
+
+label{
+    font-size: var(--md);
+    margin-left: 3rem;
+}
+
+input{
+    background-color: var(--inputcolor);
+    padding: 6px;
+    border-radius: 8px;
+    width: 500px;
+    height: 3rem;
+    margin-left: 2rem;
+    border: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    opacity: 50%;
+}
+input:focus{
+    outline: none;
+}
+#iconsearch{
+    margin-left: 4rem;
+}
+
+.homepage__sectionmd {
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.homepage__recomendacion {
+    width: 100%;
+}
+.title{
+    max-width: 1200px;
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-left: 10px;
+}
+
+.containrecomendacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+
+.deptcard{
+    width: 400px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.cardtitle{
+    height: 35px;
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 12px 12px 0px 0px;
+
+}
+
+#cardsm{
+    background: url(Resource/wall1.jpg);    
+    background-size: cover;
+    transition: 0.5s;
+}
+
+#cardsm:hover {
+    transform: scale(1.1);
+    box-shadow: 12px -4px rgba(128, 128, 128, 0.171);
+}
+
+#cardmd{
+    background-image: url(Resource/wall2.jpg);
+    background-size: cover;
+    transition: 0.5s;
+}
+
+#cardmd:hover {
+    transform: scale(1.1);
+    box-shadow: 12px -4px rgba(128, 128, 128, 0.171);
+}
+
+#cardlg{
+    background-image: url(Resource/wall3.jpg);
+    background-size: cover;
+    transition: 0.5s;
+}
+
+#cardlg:hover {
+    transform: scale(1.1);
+    box-shadow: 12px -4px rgba(128, 128, 128, 0.171);
+}
+
+.homepage__footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--primarycolor);
+    margin-top: 80px;
+}
+
+.footer__depa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.logoZT {
+    width: 75px;
+    height: 25px;
+    background: url("https://cdn.discordapp.com/attachments/657022177287340064/952797739706626098/ZT_Studios_White.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+}
+
+.ztlink {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    align-items: center;
+}
+
+.footer__list-github {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+#logogh {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.linkgithub {
+    color: white;
+    text-decoration: none;
+    font-size: var(--sm);
+}
+
+.header__nav-logo:hover {
+    cursor: pointer;
+}
+
+.main__info-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1366px) {
+
+    #navprincipal {
+        max-width: 1100px;
+    }
+
+    .homepage__sectionmd {
+        max-width: 1100px;
+    }
+
+    .footer__depa {
+        max-width: 1100px;
+    }
+
+    .deptcard {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width:1025px) {
+    #navprincipal {
+        max-width: 850px;
+    }
+
+    .homepage__sectionmd {
+        max-width: 850px;
+    }
+
+    .footer__depa {
+        max-width: 850px;
+    }
+
+    .deptcard {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width:750px) {
+    
+    #navprincipal {
+        max-width: 650px;
+    }
+
+    .homepage__sectionmd {
+        max-width: 650px;
+    }
+
+    .footer__depa {
+        max-width: 650px;
+    }
+
+
+    form {
+        width: 550px;
+    }
+
+    label {
+        font-size: var(--sm);
+    }
+    input {
+        font-size: var(--sm);
+    }
+
+    .containrecomendacion {
+        flex-direction: column;
+    }
+
+    .deptcard {
+        width: 400px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width:550px) {
+
+
+    .homepage__sectionmd {
+        max-width: 450px;
+    }
+
+    .footer__depa {
+        max-width: 450px;
+    }
+
+    form {
+        width: 370px;
+    }
+
+    #iconsearch{
+        margin-left: 1rem;
+    }
+    .deptcard {
+        width: 350px;
+    }
+
+}
