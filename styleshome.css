@@ -190,6 +190,10 @@ input:focus{
 
 }
 
+a {
+    text-decoration: none;
+}
+
 #cardsm{
     background: url(Resource/wall1.jpg);    
     background-size: cover;
