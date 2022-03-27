@@ -377,7 +377,11 @@ a {
     }
 
     form {
-        width: 370px;
+        width: 350px;
+    }
+
+    input {
+        width: 45%;
     }
 
     #iconsearch{
